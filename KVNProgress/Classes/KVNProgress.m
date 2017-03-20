@@ -537,6 +537,7 @@ static KVNProgressConfiguration *configuration;
 		if (!progressView.progressWindow.hidden) {
 			progressView.progressWindow.hidden = YES;
 			[progressView.originalKeyWindow makeKeyAndVisible];
+            progressView.progressWindow = nil;
 		}
 		
 		[UIApplication sharedApplication].statusBarStyle = [self sharedView].rootControllerStatusBarStyle;
